@@ -1,0 +1,6 @@
+*.cache
+*.dll
+*.pdb
+*.exe
+bin/
+obj/Debug/net5.0/staticwebassets/
