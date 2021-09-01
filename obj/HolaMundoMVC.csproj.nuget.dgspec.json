@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj": {}
+    "D:\\Documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj": {}
   },
   "projects": {
-    "D:\\documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj": {
+    "D:\\Documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj",
+        "projectUniqueName": "D:\\Documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj",
         "projectName": "HolaMundoMVC",
-        "projectPath": "D:\\documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj",
+        "projectPath": "D:\\Documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj",
         "packagesPath": "C:\\Users\\divie\\.nuget\\packages\\",
-        "outputPath": "D:\\documents\\platzi\\HolaMundoMVC\\obj\\",
+        "outputPath": "D:\\Documents\\platzi\\HolaMundoMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "d:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
