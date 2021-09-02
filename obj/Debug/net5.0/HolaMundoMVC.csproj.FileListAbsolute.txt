@@ -38,3 +38,4 @@ D:\Documents\platzi\HolaMundoMVC\obj\Debug\net5.0\ref\HolaMundoMVC.dll
 D:\Documents\platzi\HolaMundoMVC\obj\Debug\net5.0\HolaMundoMVC.pdb
 D:\Documents\platzi\HolaMundoMVC\obj\Debug\net5.0\HolaMundoMVC.genruntimeconfig.cache
 D:\Documents\platzi\HolaMundoMVC\obj\Debug\net5.0\HolaMundoMVC.csproj.CopyComplete
+D:\Documents\platzi\HolaMundoMVC\obj\Debug\net5.0\Razor\Views\Escuela\Index.cshtml.g.cs

@@ -4,3 +4,4 @@
 *.exe
 bin/
 obj/Debug/net5.0/staticwebassets/
+obj/Debug/net5.0/Razor/Views/Escuela/
