@@ -1,4 +1,4 @@
-namespace CoreEscuela.Entidades
+namespace HolaMundoMVC.Models
 {
     public enum TiposEscuela
     {

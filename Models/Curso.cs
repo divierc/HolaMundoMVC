@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using CoreEscuela.Util;
 
-namespace CoreEscuela.Entidades
+
+namespace HolaMundoMVC.Models
 {
-    public class Curso:ObjetoEscuelaBase, ILugar
+    public class Curso:ObjetoEscuelaBase
     {
         public TiposJornada Jornada { get; set; }
         public List<Asignatura> Asignaturas{ get; set; }
@@ -12,12 +12,5 @@ namespace CoreEscuela.Entidades
 
         public string Dirección { get; set; }
 
-
-        public void LimpiarLugar()
-        {
-            Printer.DrawLine();
-            Console.WriteLine("Limpiando Establecimiento...");
-            Console.WriteLine($"Curso {Nombre} Limpio");
-        }
     }
 }

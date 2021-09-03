@@ -12,10 +12,8 @@ namespace HolaMundoMVC.Controllers
         {
             // Se agrega el modelo escuela
             var escuela=new Escuela();
-            escuela.EscuelaId= Guid.NewGuid().ToString();
             escuela.Nombre= "Platzi Academy";
-            escuela.AñoFundación = 2005;
-
+            escuela.AñoDeCreación = 2005;
             ViewBag.TextoDePrueba = "Cualquier texto";
             return View(escuela);
         }

@@ -1,6 +1,6 @@
 using System;
 
-namespace CoreEscuela.Entidades
+namespace HolaMundoMVC.Models
 {
     public abstract class ObjetoEscuelaBase
     {
