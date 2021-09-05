@@ -1,0 +1,27 @@
+@* Lista devilmente tipada *@
+@* @model List< ObjetoEscuelaBase> *@
+
+<table class="table table-dark table-hover" >
+    @* encavezados *@
+    <thead>
+        @*  filas *@
+        <tr> 
+            @*  Columnas *@
+            <th>Nombre</th>
+            <th>Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            @* <partial name="_ObjetoEscuelaSimple" model="alumno" />     *@
+            @*  filas *@
+            <tr> 
+                @*  Columnas *@
+                <th>@item.Nombre</th>
+                <th>@item.UniqueId</th>
+            </tr>
+
+        }
+    </tbody>
+</table>
