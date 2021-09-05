@@ -3,8 +3,5 @@
 *.pdb
 *.exe
 bin/
-obj/Debug/net5.0/staticwebassets/
-obj/Debug/net5.0/Razor/Views/Escuela/
-obj/Debug/net5.0/HolaMundoMVC.assets.cache
-obj/Debug/net5.0/HolaMundoMVC.csprojAssemblyReference.cache
 obj/Debug/
+obj/Debug/*.*
