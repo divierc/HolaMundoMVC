@@ -9,8 +9,11 @@
 
 <strong>Desde la vista parcial</strong>
 
-@foreach (var asignatura in Model)
+@* @foreach (var asignatura in Model)
 {
-    <partial name="_AsignaturaSimple" model="asignatura" />    
-}
-<p>ViewBag Fecha: @ViewBag.FechaAsignatura</p>
+    <partial name="_ObjetoEscuelaSimple" model="asignatura" />    
+} *@
+@* <p>ViewBag Fecha: @ViewBag.FechaAsignatura</p> *@
+
+<strong>Desde la vista parcial</strong>
+<partial name="_ListaObjetoEscuela" />
