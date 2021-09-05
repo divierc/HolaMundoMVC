@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj": {}
+    "d:\\Documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj": {
+    "d:\\Documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj",
+        "projectUniqueName": "d:\\Documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj",
         "projectName": "HolaMundoMVC",
-        "projectPath": "D:\\Documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj",
+        "projectPath": "d:\\Documents\\platzi\\HolaMundoMVC\\HolaMundoMVC.csproj",
         "packagesPath": "C:\\Users\\divie\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\platzi\\HolaMundoMVC\\obj\\",
+        "outputPath": "d:\\Documents\\platzi\\HolaMundoMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "d:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -45,6 +45,16 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
