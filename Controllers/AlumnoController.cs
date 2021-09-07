@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -11,30 +12,20 @@ namespace HolaMundoMVC.Controllers
     public class AlumnoController : Controller
     {
         public IActionResult Index(){
-            return View(new Alumno() { Nombre="Pepe Perez" });
+            ViewBag.FechaAsignatura = DateTime.Now;
+            return View(_context.Alumnos.FirstOrDefault());
 
         }
          public IActionResult MultiAlumno()
         {
-            // Se agrega la lista de asignaturas
-            var ListaAlumnos = GenerarAlumnosAlAzar(20);
-            
-            ViewBag.FechaAsignatura = DateTime.Now;
-            return View("MultiAlumno",ListaAlumnos);
+
+            return View("MultiAlumno",_context.Alumnos);
         }
 
-        private List<Alumno> GenerarAlumnosAlAzar(int cantidad)
+        private EscuelaContext _context;
+        public AlumnoController(EscuelaContext context)
         {
-        string[] nombre1 = { "nom1", "nom2", "nom3", "nom5", "nom6" };
-        string[] apellido1 = { "ape1", "ape2", "ape3", "ape4", "ape5" };
-        string[] nombre2 = { "nom7", "nom8", "nom9", "nom10", "nom11" };
-
-        var ListaAlumnos = from n1 in nombre1
-                            from n2 in nombre2
-                            from ap1 in apellido1
-                            select new Alumno { Nombre = $"{n1} {n2} {ap1}" };
-
-        return ListaAlumnos.OrderBy((a1) => a1.UniqueId).Take(cantidad).ToList();
+            _context=context;
         }
 
     }

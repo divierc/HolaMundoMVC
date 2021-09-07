@@ -1,4 +1,4 @@
-@model List<Asignatura>
+@model IEnumerable<Asignatura>
 @{
     ViewData["ViewDataName"] = "Información Asignatura";
     ViewData["Title"] = "Información Asignatura";
@@ -7,13 +7,8 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<strong>Desde la vista parcial</strong>
-
-@* @foreach (var asignatura in Model)
-{
-    <partial name="_ObjetoEscuelaSimple" model="asignatura" />    
-} *@
-@* <p>ViewBag Fecha: @ViewBag.FechaAsignatura</p> *@
 
 <strong>Desde la vista parcial</strong>
 <partial name="_ListaObjetoEscuela" />
+
+

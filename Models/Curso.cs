@@ -11,6 +11,12 @@ namespace HolaMundoMVC.Models
         public List<Alumno> Alumnos{ get; set; }
 
         public string Dirección { get; set; }
+        public string EscuelaId { get; set; }
+        public Escuela Escuela { get; set; }
+        
+        
+        
+        
 
     }
 }
