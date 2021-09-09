@@ -8,32 +8,32 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HolaMundoMVC.Controllers
 {
-    public class AlumnoController : Controller
+    public class CursoController : Controller
     {
 
          public IActionResult Index(string Id){
 
             if(!string.IsNullOrWhiteSpace(Id))
             {
-                var items = from item in _context.Alumnos
+                var items = from item in _context.Cursos
                                 where item.Id == Id
                                 select item;
 
                 return View(items.SingleOrDefault());
             }else{
-                return View("MultiAlumno", _context.Alumnos);
+                return View("MultiCurso", _context.Cursos);
             }
 
 
         }
-         public IActionResult MultiAlumno()
+        public IActionResult MultiCurso()
         {
 
-            return View("MultiAlumno",_context.Alumnos);
+            return View("MultiCurso",_context.Cursos);
         }
 
         private EscuelaContext _context;
-        public AlumnoController(EscuelaContext context)
+        public CursoController(EscuelaContext context)
         {
             _context=context;
         }

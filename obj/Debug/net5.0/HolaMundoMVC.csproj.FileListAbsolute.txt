@@ -77,3 +77,5 @@ D:\Documents\platzi\HolaMundoMVC\bin\Debug\net5.0\runtimes\win-x86\native\Micros
 D:\Documents\platzi\HolaMundoMVC\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\Documents\platzi\HolaMundoMVC\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Documents\platzi\HolaMundoMVC\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Documents\platzi\HolaMundoMVC\obj\Debug\net5.0\Razor\Views\Curso\Index.cshtml.g.cs
+D:\Documents\platzi\HolaMundoMVC\obj\Debug\net5.0\Razor\Views\Curso\MultiCurso.cshtml.g.cs
