@@ -52,8 +52,6 @@ namespace HolaMundoMVC.Models
             modelBuilder.Entity<Alumno>().HasData(alumnos.ToArray());
             modelBuilder.Entity<Evaluación>().HasData(evaluaciones.ToArray());
 
-
-
         }
 
         private List<Asignatura> CargarAsignaturas(List<Curso> Cursos)
