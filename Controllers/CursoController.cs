@@ -32,6 +32,28 @@ namespace HolaMundoMVC.Controllers
             return View("MultiCurso",_context.Cursos);
         }
 
+         public IActionResult Create()
+        {
+            ViewBag.FechaAsignatura= DateTime.Now;
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Curso curso)
+        {
+            ViewBag.FechaAsignatura= DateTime.Now;
+
+            if(curso!=null) {
+            var escuela = _context.Escuelas.FirstOrDefault();
+            curso.EscuelaId= escuela.Id;
+            _context.Cursos.Add(curso);
+            _context.SaveChanges();
+            }
+
+            return View();
+        }
+
         private EscuelaContext _context;
         public CursoController(EscuelaContext context)
         {

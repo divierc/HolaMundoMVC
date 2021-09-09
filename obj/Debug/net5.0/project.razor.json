@@ -15699,6 +15699,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Curso\\Create.cshtml",
+      "TargetPath": "Views\\Curso\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
