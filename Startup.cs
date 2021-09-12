@@ -31,6 +31,13 @@ namespace HolaMundoMVC
                 options.UseInMemoryDatabase(databaseName: "testDB")
 
             );
+
+            // Se comfigura la base de datos en SQL
+            string connString = ConfigurationExtensions
+                                    .GetConnectionString(this.Configuration,"DefaultConnectionString");
+            services.AddDbContext<EscuelaContext>(options => options.UseSqlServer(connString)
+
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
