@@ -15624,6 +15624,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Asignatura\\Edit.cshtml",
+      "TargetPath": "Views\\Asignatura\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Curso\\MultiCurso.cshtml",
       "TargetPath": "Views\\Curso\\MultiCurso.cshtml",
       "FileKind": "mvc"
@@ -15639,8 +15644,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Escuela\\Edit.cshtml",
+      "TargetPath": "Views\\Escuela\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Curso\\Delete.cshtml",
+      "TargetPath": "Views\\Curso\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15654,8 +15669,33 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Alumno\\Delete.cshtml",
+      "TargetPath": "Views\\Alumno\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Alumno\\Edit.cshtml",
+      "TargetPath": "Views\\Alumno\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Curso\\Edit.cshtml",
+      "TargetPath": "Views\\Curso\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Escuela\\Delete.cshtml",
+      "TargetPath": "Views\\Escuela\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Curso\\Index.cshtml",
       "TargetPath": "Views\\Curso\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Asignatura\\Details.cshtml",
+      "TargetPath": "Views\\Asignatura\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15664,8 +15704,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Evaluación\\Details.cshtml",
+      "TargetPath": "Views\\Evaluación\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Evaluación\\Edit.cshtml",
+      "TargetPath": "Views\\Evaluación\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Asignatura\\MultiAsignatura.cshtml",
       "TargetPath": "Views\\Asignatura\\MultiAsignatura.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Curso\\Details.cshtml",
+      "TargetPath": "Views\\Curso\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15674,13 +15729,43 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Alumno\\Create.cshtml",
+      "TargetPath": "Views\\Alumno\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Asignatura\\Delete.cshtml",
+      "TargetPath": "Views\\Asignatura\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Shared\\_ObjetoEscuelaSimple.cshtml",
       "TargetPath": "Views\\Shared\\_ObjetoEscuelaSimple.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Evaluación\\Create.cshtml",
+      "TargetPath": "Views\\Evaluación\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Escuela\\Create.cshtml",
+      "TargetPath": "Views\\Escuela\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Alumno\\Details.cshtml",
+      "TargetPath": "Views\\Alumno\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Asignatura\\Index.cshtml",
       "TargetPath": "Views\\Asignatura\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Evaluación\\Delete.cshtml",
+      "TargetPath": "Views\\Evaluación\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15694,8 +15779,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Evaluación\\Index.cshtml",
+      "TargetPath": "Views\\Evaluación\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Escuela\\Details.cshtml",
+      "TargetPath": "Views\\Escuela\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15706,6 +15801,11 @@
     {
       "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Documents\\platzi\\HolaMundoMVC\\Views\\Asignatura\\Create.cshtml",
+      "TargetPath": "Views\\Asignatura\\Create.cshtml",
       "FileKind": "mvc"
     }
   ],

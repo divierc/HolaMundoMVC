@@ -9,23 +9,23 @@ using HolaMundoMVC.Models;
 
 namespace HolaMundoMVC.Controllers
 {
-    public class AsignaturaController : Controller
+    public class EvaluaciónController : Controller
     {
         private readonly EscuelaContext _context;
 
-        public AsignaturaController(EscuelaContext context)
+        public EvaluaciónController(EscuelaContext context)
         {
             _context = context;
         }
 
-        // GET: Asignatura
+        // GET: Evaluación
         public async Task<IActionResult> Index()
         {
-            var escuelaContext = _context.Asignaturas.Include(a => a.Curso);
+            var escuelaContext = _context.Evaluaciones.Include(e => e.Alumno).Include(e => e.Asignatura);
             return View(await escuelaContext.ToListAsync());
         }
 
-        // GET: Asignatura/Details/5
+        // GET: Evaluación/Details/5
         public async Task<IActionResult> Details(string id)
         {
             if (id == null)
@@ -33,42 +33,45 @@ namespace HolaMundoMVC.Controllers
                 return NotFound();
             }
 
-            var asignatura = await _context.Asignaturas
-                .Include(a => a.Curso)
+            var evaluación = await _context.Evaluaciones
+                .Include(e => e.Alumno)
+                .Include(e => e.Asignatura)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (asignatura == null)
+            if (evaluación == null)
             {
                 return NotFound();
             }
 
-            return View(asignatura);
+            return View(evaluación);
         }
 
-        // GET: Asignatura/Create
+        // GET: Evaluación/Create
         public IActionResult Create()
         {
-            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Id");
+            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Id");
+            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Id");
             return View();
         }
 
-        // POST: Asignatura/Create
+        // POST: Evaluación/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CursoId,Id,Nombre")] Asignatura asignatura)
+        public async Task<IActionResult> Create([Bind("AlumnoId,AsignaturaId,Nota,Id,Nombre")] Evaluación evaluación)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(asignatura);
+                _context.Add(evaluación);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Id", asignatura.CursoId);
-            return View(asignatura);
+            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Id", evaluación.AlumnoId);
+            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Id", evaluación.AsignaturaId);
+            return View(evaluación);
         }
 
-        // GET: Asignatura/Edit/5
+        // GET: Evaluación/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -76,23 +79,24 @@ namespace HolaMundoMVC.Controllers
                 return NotFound();
             }
 
-            var asignatura = await _context.Asignaturas.FindAsync(id);
-            if (asignatura == null)
+            var evaluación = await _context.Evaluaciones.FindAsync(id);
+            if (evaluación == null)
             {
                 return NotFound();
             }
-            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Id", asignatura.CursoId);
-            return View(asignatura);
+            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Id", evaluación.AlumnoId);
+            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Id", evaluación.AsignaturaId);
+            return View(evaluación);
         }
 
-        // POST: Asignatura/Edit/5
+        // POST: Evaluación/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("CursoId,Id,Nombre")] Asignatura asignatura)
+        public async Task<IActionResult> Edit(string id, [Bind("AlumnoId,AsignaturaId,Nota,Id,Nombre")] Evaluación evaluación)
         {
-            if (id != asignatura.Id)
+            if (id != evaluación.Id)
             {
                 return NotFound();
             }
@@ -101,12 +105,12 @@ namespace HolaMundoMVC.Controllers
             {
                 try
                 {
-                    _context.Update(asignatura);
+                    _context.Update(evaluación);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!AsignaturaExists(asignatura.Id))
+                    if (!EvaluaciónExists(evaluación.Id))
                     {
                         return NotFound();
                     }
@@ -117,11 +121,12 @@ namespace HolaMundoMVC.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CursoId"] = new SelectList(_context.Cursos, "Id", "Id", asignatura.CursoId);
-            return View(asignatura);
+            ViewData["AlumnoId"] = new SelectList(_context.Alumnos, "Id", "Id", evaluación.AlumnoId);
+            ViewData["AsignaturaId"] = new SelectList(_context.Asignaturas, "Id", "Id", evaluación.AsignaturaId);
+            return View(evaluación);
         }
 
-        // GET: Asignatura/Delete/5
+        // GET: Evaluación/Delete/5
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -129,31 +134,32 @@ namespace HolaMundoMVC.Controllers
                 return NotFound();
             }
 
-            var asignatura = await _context.Asignaturas
-                .Include(a => a.Curso)
+            var evaluación = await _context.Evaluaciones
+                .Include(e => e.Alumno)
+                .Include(e => e.Asignatura)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (asignatura == null)
+            if (evaluación == null)
             {
                 return NotFound();
             }
 
-            return View(asignatura);
+            return View(evaluación);
         }
 
-        // POST: Asignatura/Delete/5
+        // POST: Evaluación/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var asignatura = await _context.Asignaturas.FindAsync(id);
-            _context.Asignaturas.Remove(asignatura);
+            var evaluación = await _context.Evaluaciones.FindAsync(id);
+            _context.Evaluaciones.Remove(evaluación);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool AsignaturaExists(string id)
+        private bool EvaluaciónExists(string id)
         {
-            return _context.Asignaturas.Any(e => e.Id == id);
+            return _context.Evaluaciones.Any(e => e.Id == id);
         }
     }
 }

@@ -1,15 +1,41 @@
-@model Asignatura
-@{
-    ViewData["ViewDataName"] = "Información Asignatura";
-    ViewData["Title"] = "Información Asignatura";
+@model IEnumerable<HolaMundoMVC.Models.Asignatura>
 
+@{
+    ViewData["Title"] = "Index";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h1>Index</h1>
 
-<strong>Desde la vista parcial</strong>
-
-<partial name="_ObjetoEscuelaSimple" />    
-
-<h3>cosa dinamica: @ViewBag.CosaDinamica</h3>
-<h3>Fecha: @ViewBag.FechaAsignatura</h3>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Curso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Curso.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

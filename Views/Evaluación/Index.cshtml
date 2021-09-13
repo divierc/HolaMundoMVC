@@ -1,4 +1,4 @@
-@model IEnumerable<HolaMundoMVC.Models.Alumno>
+@model IEnumerable<HolaMundoMVC.Models.Evaluación>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,7 +13,13 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Curso)
+                @Html.DisplayNameFor(model => model.Alumno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Asignatura)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nota)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Nombre)
@@ -25,7 +31,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Curso.Id)
+                @Html.DisplayFor(modelItem => item.Alumno.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Asignatura.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nota)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Nombre)

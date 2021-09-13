@@ -7,7 +7,7 @@ namespace HolaMundoMVC.Models
     public class Curso:ObjetoEscuelaBase
     {
         [Required(ErrorMessage =  "El nombre del curso es requerido.")]
-        [StringLength(5)]
+        [StringLength(5, ErrorMessage ="La longitud minima de la dirección es de 5 caracteres.")]
         public override string Nombre { get; set; }
         public TiposJornada Jornada { get; set; }
         public List<Asignatura> Asignaturas{ get; set; }
